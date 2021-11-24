@@ -1,16 +1,24 @@
-// First contract on the eth test net..
-// Contract stores some data on the blockchain.
-
-
-//Choose the version of the solidity compiler.
-pragma solidity >= 0.6.0;
+pragma solidity ^0.6.0;
 
 contract DataStorage {
-    //if no value specified, then variable is assigned 0;
-    uint256 public favoriteNumber;
+    string myString;
+    int public myInt ;
+    uint256 unsignedInt;
+    bool myBool = false;
 
-    function store(uint256 _favoriteNumber) public {
-        favoriteNumber = _favoriteNumber;
+    function setUint(uint256 _myUint) public {
+        unsignedInt = _myUint;
     }
 
+    function setInt(int _myInt) public {
+        myInt = _myInt;
+    }
+
+    //view reads state, does not alter state on chain.
+    function retrieveUint() public view returns(uint256){
+        return unsignedInt;
+    }
+
+    // Declaring variable format -> type visibility name;
+    // Declaring func = function name(dtype paramname) visibility returns(dtype){}
 }
