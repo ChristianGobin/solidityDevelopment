@@ -1,11 +1,21 @@
+// Version of Solidity
 pragma solidity ^0.6.0;
 
+// Initial Contract Declaration
+// Contract stores data on the blockchain.
+
 contract DataStorage {
+
+
+// Declaring variable
+// Datatype visibility nameOfVar = value
+
     string myString;
     int public myInt ;
     uint256 unsignedInt;
     bool myBool = false;
-
+    
+// function funcName(dtypeOfParam paramName) visibility returns(dtype) { body }
     function setUint(uint256 _myUint) public {
         unsignedInt = _myUint;
     }
@@ -18,7 +28,4 @@ contract DataStorage {
     function retrieveUint() public view returns(uint256){
         return unsignedInt;
     }
-
-    // Declaring variable format -> type visibility name;
-    // Declaring func = function name(dtype paramname) visibility returns(dtype){}
 }
