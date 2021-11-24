@@ -1,2 +1,5 @@
-# blockchain-dapps
-Variety of Dapps created using the Solidity Programming language on the Ethereum Network.
+# Blockchain Development On the Ethereum Network.
+
+<ul>
+  <li> Solidity Basics (Data Types, etc. Fundamentals of the Solidity Language) </li>
+</ul>
