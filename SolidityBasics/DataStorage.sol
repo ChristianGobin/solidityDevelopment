@@ -14,7 +14,8 @@ contract DataStorage {
     int public myInt ;
     uint256 unsignedInt;
     bool myBool = false;
-    
+
+// Format for declaring a function.
 // function funcName(dtypeOfParam paramName) visibility returns(dtype) { body }
     function setUint(uint256 _myUint) public {
         unsignedInt = _myUint;
