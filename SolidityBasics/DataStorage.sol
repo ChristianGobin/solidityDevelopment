@@ -11,7 +11,7 @@ contract DataStorage {
 // Datatype visibility nameOfVar = value
 
     string myString;
-    int public myInt ;
+    int myInt ;
     uint256 unsignedInt;
     bool myBool = false;
 
@@ -28,5 +28,9 @@ contract DataStorage {
     //view reads state, does not alter state on chain.
     function retrieveUint() public view returns(uint256){
         return unsignedInt;
+    }
+    
+    function retrieveMyInt() public view returns(int) {
+        return myInt;
     }
 }
