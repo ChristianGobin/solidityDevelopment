@@ -34,7 +34,7 @@ contract DataStorage {
         return myInt;
     }
     
-    //Create Struct and initialize
+    //Create Struct and initialize Person named mike
     struct Person {
         uint age;
         string name;
@@ -42,22 +42,12 @@ contract DataStorage {
 
     Person public mike = Person({age: 32, name: "Mike"});
     
-    // Dynamic Array called classroom consisting of Person structs
-    Person[] public classroom;
+    // Dynamic Array called personList consisting of Person structs
+    Person[] public personList;
     
-    // Attempt to populate the array.
-    function populateClassroom(uint256 _age, string memory _name) public {
-        uint256 count = 0;
-        while(count < 16){
-            classroom.push(Person({age: 23, name: "Kid"}));
-            count += 1;
-        }
+    // memory keyword lets param be deleted after execution, vs storage keeps param in storage
+    // add person to list by initializing person in push method
+    function addPerson(uint _age, string memory _name) public {
+        personList.push(Person(_age, _name));
     }
-
-    // Attempt to show array values.
-    function showClassRoster() public returns(string){
-        for(uint x = 1; x <= 15; x++){
-            return(classroom.name[x]);
-        }
-    
 }
