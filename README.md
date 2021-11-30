@@ -1,7 +1,8 @@
-# Blockchain Development On the Ethereum Network.
+# Blockchain Development
 <hr/>
-Stack
 - Solidity
 - ReactJS
+- Truffle
+- Ganache
 - Npm
 - git
