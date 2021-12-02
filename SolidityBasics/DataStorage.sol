@@ -50,4 +50,7 @@ contract DataStorage {
     function addPerson(uint _age, string memory _name) public {
         personList.push(Person(_age, _name));
     }
+    
+    //mapping, structs.
+    //
 }
