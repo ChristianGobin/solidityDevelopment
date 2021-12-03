@@ -1,7 +1,7 @@
-//Contract deploys other contracts to the blockchain.
-//Import DataStorage.sol Contract.
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.10;
+import "./DataStorage.sol";
 
-contract DataStorageFactory {
-  
-
+contract DataStorageFactory{
+    //Deploy Original Data Storage Contract through this Contract.
 }

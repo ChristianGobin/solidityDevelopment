@@ -30,7 +30,10 @@ contract SimpleStorage {
 
     // Mapping -> basically a dictionary
     mapping (string => string) public actualDictionary;
-    actualDictionary[];
+    
+    function addToActual(string memory word, string memory definition) public {
+        
+    }
 
 
 }
