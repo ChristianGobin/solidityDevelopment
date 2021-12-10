@@ -32,7 +32,14 @@ contract SimpleStorage {
     mapping (string => string) public actualDictionary;
     
     function addToActual(string memory word, string memory definition) public {
-        actualDictionary({word => definition});
+        actualDictionary[word] = definition;
+    }
+
+    //Integer Array
+    uint256[] public integers;
+    
+    function addToIntegerArray(uint256 _int) public {
+        integers.push(_int);
     }
 
 
