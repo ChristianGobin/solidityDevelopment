@@ -6,4 +6,3 @@
 - Truffle
 - Ganache
 - Npm
-- git
