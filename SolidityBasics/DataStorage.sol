@@ -5,10 +5,12 @@ contract SimpleStorage {
     uint256 private tokenCount = 1_000_000;
     string private author = "Christian";
     
-    //Structs = basically an object.
+    //Structs = custom data types with properties defined by user
     struct Users {
         string username;
-        uint256 age; 
+        uint256 age;
+        int debt;
+        uint currentHoldings;
     }
     
     //Array of users
