@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.10;
-import "./DataStorage.sol";
+import './DataStorage.sol';
 
 //Deploy Original Data Storage Contract through this Contract.
 //Need to link original SimpleStorage.sol contract to this contract.
@@ -17,7 +17,7 @@ contract StorageFactory{
         anotherNum = 54;
     }
     
-    //Deploy DataStorage Contracts to blockchain and store them in an array
+    //Array keeps track of Storage contracts.
     DataStorage[] public DataStorageArray;
     
     //Create and Deploy new DataStorage Contracts in function
