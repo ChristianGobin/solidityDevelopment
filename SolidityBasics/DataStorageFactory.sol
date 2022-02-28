@@ -17,4 +17,13 @@ contract StorageFactory{
         anotherNum = 54;
     }
     
+    //Deploy DataStorage Contracts to blockchain and store them in an array
+    DataStorage[] public DataStorageArray;
+    
+    //Create and Deploy new DataStorage Contracts in function
+    function addToDataStorageArray() public {
+        DataStorage newDataStorageContract = new DataStorage();
+        DataStorageArray.push(newDataStorageContract);
+    }
+    
 }
