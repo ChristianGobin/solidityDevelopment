@@ -1,8 +1,13 @@
-const path = require('path');
-const fs = require('fs');
-const solc = require('solc');
+const path = require("path");
+const fs = require("fs");
+const solc = require("solc");
 
-const inboxPath = //path.something(__dirname, InboxDapp, Inbox); //Link Path here.
-const source  = //fs.something(inboxPath, 'utf8'); //Convert file to utf encoded js
-console.log(solc(source, 1); compile 1 contract in the source code.
+//Get file path of solidity contract and store in a const.
+const inboxPath = path.resolve(__dirname, "contracts", "Inbox.sol");
+console.log(inboxPath); //sanity check.
 
+//source code for inbox contract. using file system reader
+const source = fs.readFileSync(inboxPath, "utf8");
+
+//compile contract using solidity compiler and the byte code logged to the console.
+module.exports = solc.compile(source, 1);
