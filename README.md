@@ -10,6 +10,6 @@ Tools.
 - Npm
 <p>
 Project One: InboxDapp. 
-Sol Version @0.4.17
-npm - fs, path, solc
+Sol Version @0.4.10
+npm - fs, path, solc, web3, assert
 </p>
