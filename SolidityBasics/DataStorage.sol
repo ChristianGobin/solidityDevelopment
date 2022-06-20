@@ -17,6 +17,9 @@ contract DataStorage {
     // Map Person to their last name
     mapping(string => string) public fullName;
     
+    // Map Person's last name to Person Structure
+    mapping(string => Person) public lastNameMap;
+    
     function addPersonToList(string memory _first, string memory _last, uint8 _age) public {
         //When function fires, increment amount of people in mapping.
         countOfPeople += 1;
@@ -27,5 +30,6 @@ contract DataStorage {
         return listOfPeople[_index];
        
     }
+    
 
 }
