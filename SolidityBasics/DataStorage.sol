@@ -1,6 +1,6 @@
 //SPDX-License-Identifier: MIT
 //Contract uses Structs, Arrays, Functions to populate an array of said Structs.
-pragma solidity >=0.8.0;
+pragma solidity ^0.8.8;
 contract DataStorage {
 
     struct Person {
@@ -8,17 +8,10 @@ contract DataStorage {
         string lastName;
         uint8 age;
     }
-
-    //Array Version -> Person[] private listOfPeople;
+    
     //Use a mapping instead of array
     uint countOfPeople = 0;
     mapping(uint => Person) public listOfPeople;
-    
-    // Map Person to their last name
-    mapping(string => string) public fullName;
-    
-    // Map Person's last name to Person Structure
-    mapping(string => Person) public lastNameMap;
     
     function addPersonToList(string memory _first, string memory _last, uint8 _age) public {
         //When function fires, increment amount of people in mapping.
