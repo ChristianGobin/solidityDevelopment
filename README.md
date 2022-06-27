@@ -1,10 +1,11 @@
-# Blockchain Development
+# Solidity
 
 <hr/>
 Tools.
 - Solidity
 - ReactJS
 - Web3.py
+- Web3.js
 - Truffle
 - Ganache
 - Npm
