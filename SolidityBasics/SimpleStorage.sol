@@ -1,27 +1,15 @@
-//SPDX-License-Identifier: MIT
-pragma solidity ^0.8.8;
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
 
+// This contract stores a number.
 contract SimpleStorage {
-    //Data Types: boolean, uint256, int256, bytes32, be specific in size of bits used.
-    //Storage of People types aka structures
-    struct User {
-        string username;
-        uint id;
+
+    uint256 storageNumber;
+    function storeNumber(uint256 _favorite) public {
+        storageNumber = _favorite;
     }
-
-    //mappings are essentially dictionaries. Better for organizing lists of data.
-    mapping(uint256 => User) public userIdMap;
-
-    //mapIndex is made public so we're able to see how many items are in the map. As to not cause index errors.
-    uint256 public mapIndex;
-
-    function addToUserIdMap(string memory _username) public {
-        userIdMap[mapIndex] = User(_username, mapIndex);
-        mapIndex++;
-    }
-    
-    function lookupUserId(uint256 _mapIndex) public view returns(User memory){
-        return userIdMap[_mapIndex];
+    function showStorageNumber() public view returns(uint256){
+        return storageNumber;
     }
 
 }
