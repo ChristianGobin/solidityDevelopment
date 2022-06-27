@@ -1,40 +1,28 @@
-//SPDX-License-Identifier: MIT
-pragma solidity ^0.8.8;
+// SPDX-License-Identifier: MIT
+
+pragma solidity ^0.8.0;
+
 import "./SimpleStorage.sol";
 
+// This contract stores deploys a SimpleStorage Contract and stores it in an Array
+// It also calls functions from the generated contracts using the index in the contract array of the contract.
+// This is essentially the same as generating objects and calling their methods. 
+// Except the Class = Contract
+// Object = Deployed Contract with Address
+
 contract StorageFactory {
-    //An array of contracts
-    SimpleStorage[] public storageArray;
+    SimpleStorage[] public ssContractArray;
 
-    //Keep track of the length of the the Array, to not cause indexing errors.
-    uint256 public lengthOfStorageArray;
-    
-    //function generates new simpleStorage contract.
-    function generateSimpleStorage() internal returns(SimpleStorage){
-        SimpleStorage newSimpleStorage = new SimpleStorage();
-        return newSimpleStorage;
+    function generateSimpleStorageContract() public {
+        SimpleStorage temporaryStorage = new SimpleStorage();
+        ssContractArray.push(temporaryStorage);
     }
 
-    //function calls previous function and appends the result to the storageArray
-    function addToStorageArray() public{
-        storageArray.push(generateSimpleStorage());
-        lengthOfStorageArray++;
+    function sfStoreNumber(uint256 _contractIndex, uint256 _storageNumber) public {
+        ssContractArray[_contractIndex].storeNumber(_storageNumber);
     }
 
-    //Self explanitory, lookup a contract's address using the _index argument
-    function lookupContractByIndex(uint256 _index) public view returns(SimpleStorage){
-        return storageArray[_index];
+    function sfShowNumber(uint256 _contractIndex) public view returns(uint256){
+        return ssContractArray[_contractIndex].showStorageNumber();
     }
-    
-    //Calling function from another contract
-    function sfSetFav(uint256 _storageIndex, uint256 _favNumber) public{
-        SimpleStorage simpleStorage = storageArray[_storageIndex];
-        simpleStorage.setFavNumber(_favNumber);
-        
-    }
-    //Returning the set value of a property of a contact.
-    function showFavoriteNumber() public view returns(uint256){
-        return --
-    }
-
 }
