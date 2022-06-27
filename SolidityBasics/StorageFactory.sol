@@ -25,5 +25,16 @@ contract StorageFactory {
     function lookupContractByIndex(uint256 _index) public view returns(SimpleStorage){
         return storageArray[_index];
     }
+    
+    //Calling function from another contract
+    function sfSetFav(uint256 _storageIndex, uint256 _favNumber) public{
+        SimpleStorage simpleStorage = storageArray[_storageIndex];
+        simpleStorage.setFavNumber(_favNumber);
+        
+    }
+    //Returning the set value of a property of a contact.
+    function showFavoriteNumber() public view returns(uint256){
+        return --
+    }
 
 }
