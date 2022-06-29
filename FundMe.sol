@@ -14,4 +14,6 @@ contract FundMe {
     function fund() public payable {
         addressToBalance[msg.sender] += msg.value;
     }
+    
+    // Allows owner of contract to withdraw funds from contract. function withdraw() public {}
 }
