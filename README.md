@@ -9,6 +9,7 @@ Tools.
 - Truffle
 - Ganache
 - Npm
+- Chainlink Decentralized Oracle
 <p>
 Project One: InboxDapp. 
 Sol Version @0.4.10
