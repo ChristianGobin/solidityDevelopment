@@ -2,7 +2,7 @@
 pragma solidity >=0.4.0;
 contract Inbox {
     string private userName;
-    function Inbox(string memory _userName) public {
+    function inboxFunc(string memory _userName) public {
         userName = _userName;
     }
 
