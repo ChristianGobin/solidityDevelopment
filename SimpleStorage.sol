@@ -17,8 +17,8 @@ contract SimpleStorage {
 
     /* 
     
-    Instead of repeating those long arugments needed for function, let us make a helper function to create the car,
-    and a seperate function to push to either Data structure. (map & array)
+    Instead of repeating those long arguments needed for function, let us make a helper function to create the car,
+    and a separate function to push to either Data structure. (map & array)
 
     function generateCarForList(string memory _make, string memory _model, uint256 _year) public {
 
