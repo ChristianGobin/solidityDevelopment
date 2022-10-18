@@ -2,16 +2,23 @@
 
 <hr/>
 Tools.
-- Solidity
-- ReactJS
-- Web3.py
-- Web3.js
-- Truffle
-- Ganache
-- Npm
-- Chainlink Decentralized Oracle
+- Solidity for Smart Contracts
+- React for UI
+- Web3.js, Truffle Suite, Hard Hat
+- Node Package Manager for Tools needed (solc, etc)
+- Chainlink Decentralized Oracle for grabbing data from better sources
 <ul>
-<li>SimpleStorage.sol & StorageFactory.sol - Deployed a contract using another contract, demonstrating composibility</li>
-<li>FundMe.sol - Create a function within a contract that accepts payment in eth, and a function that allows funds to be withdrawn from contract to wallet. 
-Chain Link Decentalized Oracle used to assign transaction minimum in usd.</li>
-</ul>
+<dl>
+	<dt>
+		Contract: SimpleStorage
+	</dt>
+	<dd>
+		Purpose: Store Data on the Blockchain, and use the fundamentals of Solidity in a contract.
+	</dd>
+	<dt>
+		Contract: StorageFactory
+	</dt>
+	<dd>
+		Purpose: Deploy SimpleStorage Contracts from this factory contract. Uses fundamentals of contract deployment and importing contracts into one another.
+	</dd>
+</dl>
