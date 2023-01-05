@@ -21,4 +21,10 @@ Tools.
 	<dd>
 		Purpose: Deploy SimpleStorage Contracts from this factory contract. Uses fundamentals of contract deployment and importing contracts into one another.
 	</dd>
+	<dt>
+		<a href="https://www.codewars.com/kata/55f9bca8ecaa9eac7100004a/train/solidity"> Codewars: Beginner Series #2 Clock </a>
+	</dt>
+	<dd>
+		Purpose: Clock shows h hours, m minutes and s seconds after midnight. Your task is to write a function which returns the time since midnight in milliseconds.
+	</dd>
 </dl>
