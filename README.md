@@ -33,4 +33,11 @@ Tools.
 	<dd>
 		Purpose: Write a function that accepts an integer n and a string s as parameters, and returns a string of s repeated exactly n times.
 	</dd>
+		<dt>
+		<a href="https://www.codewars.com/kata/525caa5c1bf619d28c000335/train/solidity"> Codewars: Tic-Tac-Toe Checker </a> :construction:
+	</dt>
+	<dd>
+		Purpose: Write a function...
+	</dd>
+
 </dl>
