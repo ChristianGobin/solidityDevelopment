@@ -3,10 +3,10 @@
 <hr/>
 Tools.
 - Solidity for Smart Contracts
-- Vue for FrontEnd
+- Vue, React
 - Web3.js, Truffle Suite, Hard Hat
 - Node Package Manager for Tools needed (solc, etc)
-- Chainlink Decentralized Oracle for grabbing data from better sources
+- Chainlink Decentralized Oracle
 <ul>
 <dl>
 	<dt>
