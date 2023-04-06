@@ -6,8 +6,14 @@
 Language: solidity ^0.8.0;
 Platforms: codewars, hackerrank, leetcode
 
-<ul>
+
 <dl>
+	<dt>
+		SimpleStorage
+	</dt>
+	<dd>
+		-
+	</dd>
 	<dt>
 		<a href="https://www.codewars.com/kata/55f9bca8ecaa9eac7100004a/train/solidity"> Codewars: Beginner Series #2 Clock </a> ☑️
 	</dt>
