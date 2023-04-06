@@ -9,10 +9,10 @@ Platforms: codewars, hackerrank, leetcode
 
 <dl>
 	<dt>
-		SimpleStorage
+		<a href="./SimpleStorageEth">SimpleStorageEth</a>
 	</dt>
 	<dd>
-		-
+		Purpose: Basic Solidity Development Environment for practice and demonstration.
 	</dd>
 	<dt>
 		<a href="https://www.codewars.com/kata/55f9bca8ecaa9eac7100004a/train/solidity"> Codewars: Beginner Series #2 Clock </a> ☑️
