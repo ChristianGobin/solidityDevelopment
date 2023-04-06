@@ -27,7 +27,7 @@ Platforms: codewars, hackerrank, leetcode
 		Purpose: Write a function...
 	</dd>
 	<dt>
-		<a href="https://www.codewars.com/kata/525caa5c1bf619d28c000335/train/solidity"> Codewars: is N divisible by both X and Y? </a> ☑️
+		<a href="https://www.codewars.com/kata/525caa5c1bf619d28c000335/train/solidity"> Codewars: is N divisible by both X and Y? </a>☑️
 	</dt>
 	<dd>
 		Create a function that checks if a number n is divisible by two numbers x AND y. All inputs are positive, non-zero numbers.
