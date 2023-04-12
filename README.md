@@ -39,7 +39,7 @@ Platforms: codewars, hackerrank, leetcode
 		Create a function that checks if a number n is divisible by two numbers x AND y. All inputs are positive, non-zero numbers.
 	</dd>
 	<dt>
-		<a href="https://www.codewars.com/kata/59c13f288bcb77dbfe00091f/train/solidity"> Codewars: Rock, Paper, Scissors Smart Contract </a>
+		<a href="https://www.codewars.com/kata/59c13f288bcb77dbfe00091f/train/solidity"> Codewars: Rock, Paper, Scissors Smart Contract <a> :construction:
 	</dt>
 	<dd>
 		Let's play the classic game of Rock, Paper, Scissors on the Ethereum blockchain! If you haven't already done so check out the Smart
