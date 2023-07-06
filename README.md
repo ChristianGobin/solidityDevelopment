@@ -46,7 +46,7 @@ Platforms: codewars, hackerrank, leetcode
 		Contracts Introduction: GiftCoin kata for a quick introduction to smart contracts...
 	</dd>
  	<dt>
-		<a href="https://www.codewars.com/kata/563a631f7cbbc236cf0000c2/train/solidity"> Codewars: Grasshopper - Terminal game move function </a> 🚧
+		<a href="https://www.codewars.com/kata/563a631f7cbbc236cf0000c2/train/solidity"> Codewars: Grasshopper - Terminal game move function </a> ✔️
 	</dt>
  	<dd>
 	 	In this game, the hero moves from left to right. The player rolls the dice and moves the number of spaces indicated by the 
