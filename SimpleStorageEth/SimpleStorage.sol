@@ -3,7 +3,7 @@ pragma solidity ^0.8.0;
 
 contract SimpleStorage {
     Person[] public personArray;
-
+    uint public contractData;
     struct Person {
         uint256 age;
         string name;
