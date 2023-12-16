@@ -2,14 +2,11 @@
 pragma solidity ^0.8.0;
 
 contract SimpleStorage {
-    Person[] public personArray;
-    uint public contractData;
-    struct Person {
-        uint256 age;
-        string name;
-    }
+    uint256 public storageValue;
 
-    function addToPersonArray(uint256 _age, string memory _name) public {
-        personArray.push(Person(_age, _name));
+    // Function Stores Value in public variable.
+    
+    function storeValue(uint256 _storageValue) public {
+        storageValue = _storageValue;
     }
 }
