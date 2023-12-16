@@ -7,6 +7,6 @@ contract StorageFactory {
     SimpleStorage[] public sfFactory;
 
     function deployToSf() public {
-        sfFactory.push(SimpleStorage);
+        sfFactory.push(new SimpleStorage);
     }
 }
