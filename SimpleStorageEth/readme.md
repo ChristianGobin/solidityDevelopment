@@ -2,6 +2,7 @@
 
 Objectives: 
 - Demonstrate Basics of Solidity
-- Deploy to Testnet using Hardhat
+- Deploy to Testnet: Sepolia
 - Test Contract Security
 - Test New features
+- Foundry
