@@ -1,17 +1,22 @@
 // SPDX-License-Identifier: MIT
 
-import './SimpleStorage.sol';
+import { SimpleStorage } from './SimpleStorage.sol';
 pragma solidity ^0.8.0;
 
 
 contract StorageFactory {
     uint256 internal arrayIndex;
+    
+    SimpleStorage public simpleStorage;
+    SimpleStorage[] public simpleStorageArray;
 
-    // function generates a SimpleStorage contract and pushes to an array
-    SimpleStorage[] public storageArray;
+    // Generate and Deploy New Simple Storage Contract.
     function generateSimpleStorage() public {
-        storageArray.push(new SimpleStorage());
-        arrayIndex++;
+        simpleStorage = new SimpleStorage();
+    }
+
+    function addSimpleStorageToArray() public {
+        simpleStorageArray.push(simpleStorage);
     }
 
     // function shows how many contracts are in the array
@@ -24,6 +29,7 @@ contract StorageFactory {
         // needs to use contract address
         // needs to use abi to access contract methods.
 
+        
         
     }
 }
